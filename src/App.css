@@ -28,6 +28,36 @@
   color: #61dafb;
 }
 
+.App-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.response-result {
+  border-style: dotted;
+  padding: 0.5rem 1rem;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.no-result {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
