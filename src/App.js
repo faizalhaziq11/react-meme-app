@@ -34,7 +34,7 @@ function App() {
   const info = filteredData.map((memes) => {
     return (
       <div className="result" key={memes.id}>
-        <img src={memes.url} alt={memes.name} width="35%" height="35%" />
+        <img src={memes.url} alt={memes.name} width="60%" height="60%" />
         <div className="">{memes.name}</div>
       </div>
     );
@@ -66,7 +66,7 @@ function App() {
         {isLoading && reactSpinner}
         {!data && <p>No data is loaded</p>}
         {searchResult}
-        {result}
+        <div className="memes">{result}</div>
         {/* {data.map((memes) => (
           <div className="container" key={memes.id}>
             <img src={memes.url} alt={memes.name} width="35%" height="35%" />
